@@ -1,7 +1,7 @@
 {
   "name": "promisify-setstate",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "description": "Promisifies react component setState method",
   "author": "Deepak Sharma <dpkshrma01@gmail.com>",
   "repository": "https://github.com/dpkshrma/promisify-setstate",
@@ -11,8 +11,14 @@
   "engines": {
     "node": ">=8.9.4"
   },
+  "scripts": {
+    "build": "babel index.js -d lib"
+  },
   "dependencies": {},
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
     "eslint": "^4.9.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.7.0"
